@@ -1,0 +1,193 @@
+/* ОБНУЛЕНИЕ */
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #fff;
+	background-color: #212121;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	padding: 0px 10px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login {
+	.login__text {
+		text-align: left;
+
+		& h1 {
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+
+		& p {
+			font-size: 16px;
+			opacity: 70%;
+		}
+	}
+}
+
+.login-form {
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	.login-form__input-border {
+		border: 1px solid #AAAAAA;
+		height: 45px;
+		width: 100%;
+		border-radius: 10px;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		& input {
+			background-color: #181818;
+			padding: 5px 10px;
+			height: 100%;
+			width: 100%;
+			border-radius: 10px;
+			outline: none;
+			font-size: 15px;
+			font-weight: 600;
+			color: #ffffffff;
+
+			&:focus {
+				.login-form__input-border {
+					border: 1px solid red !important;
+				}
+			}
+		}
+	}
+
+	.login__error {
+		width: 100%;
+
+		& span {
+			color: red;
+		}
+	}
+
+	.login__button {
+		cursor: pointer;
+		width: 100%;
+		padding: 10px 0px;
+		margin-top: 15px;
+		font-size: 15px;
+		font-weight: 700;
+		border-radius: 10px;
+		background-color: #8774E1;
+		color: #ffffffff;
+	}
+}
+
+.user {
+	padding: 20px 10px;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 10px;
+	background-color: #181818;
+
+	.user__avatar {
+		width: 30%;
+		height: auto;
+		border-radius: 50%;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	.user__text {
+		margin-top: 20px;
+		font-size: 25px;
+		width: 100%;
+		line-height: 1.2;
+
+		& h1,
+		p {
+			font-weight: 400;
+
+			& span {
+				font-weight: 600;
+			}
+		}
+	}
+
+	.user__button {
+		margin-top: 40px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+
+		.user__signOut {
+			padding: 10px 0px;
+			cursor: pointer;
+			border-radius: 5px;
+			width: 40%;
+			font-weight: 700;
+			font-size: 20px;
+			transition: .2s ease all;
+			background-color: #8774E1;
+			color: #ffffff;
+
+			&:hover {
+				background-color: #7a67da;
+			}
+		}
+	}
+}
+
+/* ОБНУЛЕНИЕ */
