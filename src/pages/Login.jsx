@@ -46,7 +46,7 @@ function Login() {
 	};
 
 	if (isAuth) {
-		return <Navigate to="/" />
+		return <Navigate to="/intensive" />
 	};
 
 	return (
